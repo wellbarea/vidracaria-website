@@ -2,14 +2,14 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 
-const LETTERS = "VITRALLE".split("");
+const LETTERS = "BARÊA".split("");
 
 export default function PageLoader() {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
     if (typeof sessionStorage !== "undefined") {
-      const hasLoaded = sessionStorage.getItem("vitralle-loaded");
+      const hasLoaded = sessionStorage.getItem("barea-loaded");
       if (hasLoaded) {
         setIsVisible(false);
         return;
@@ -18,7 +18,7 @@ export default function PageLoader() {
 
     const timer = setTimeout(() => {
       if (typeof sessionStorage !== "undefined") {
-        sessionStorage.setItem("vitralle-loaded", "1");
+        sessionStorage.setItem("barea-loaded", "1");
       }
       setIsVisible(false);
     }, 2600);

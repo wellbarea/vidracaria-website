@@ -114,7 +114,7 @@ export default function Videos() {
   const isInView = useInView(ref, { once: true, amount: 0.15 });
 
   return (
-    <section id="videos" className="py-32 bg-gray-50">
+    <section id="videos" className="py-32 bg-gray-50/50">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Header */}

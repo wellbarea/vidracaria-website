@@ -143,7 +143,7 @@ export default function Portfolio() {
     : PROJECTS.filter((p) => p.category === selected);
 
   return (
-    <section id="portfolio" className="py-32 bg-gray-50">
+    <section id="portfolio" className="py-32 bg-gray-50/50">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Header */}

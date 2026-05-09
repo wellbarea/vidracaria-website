@@ -126,7 +126,7 @@ export default function Contato() {
   };
 
   return (
-    <section id="contato" className="py-32 bg-white">
+    <section id="contato" className="py-32">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Header */}

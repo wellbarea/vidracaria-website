@@ -12,6 +12,7 @@ import Contato from "./Contato";
 import PageLoader from "./PageLoader";
 import CustomCursor from "./CustomCursor";
 import ScrollProgress from "./ScrollProgress";
+import GlassBackground from "./GlassBackground";
 
 const navItems = [
   { id: "home", label: "Início" },
@@ -58,8 +59,9 @@ export default function App() {
       <PageLoader />
       <CustomCursor />
       <ScrollProgress />
+      <GlassBackground />
 
-      <div className="size-full bg-white text-black overflow-x-hidden">
+      <div className="size-full text-black overflow-x-hidden">
         {/* ── Header ── */}
         <motion.header
           animate={{
@@ -80,11 +82,24 @@ export default function App() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
               onClick={() => scrollToSection("home")}
-              className={`text-xl font-black tracking-[0.2em] transition-colors duration-400 ${
-                isPastHero ? "text-black" : "text-white"
-              }`}
+              className="transition-opacity duration-300 hover:opacity-80"
             >
-              VITRALLE
+              <div className="flex items-center gap-3">
+                <span className={`font-black text-3xl leading-none transition-colors duration-300 ${
+                  isPastHero ? "text-black" : "text-white"
+                }`}>B</span>
+                <div className={`w-[1px] h-8 transition-colors duration-300 ${
+                  isPastHero ? "bg-black/30" : "bg-white/30"
+                }`} />
+                <div className="flex flex-col items-start leading-tight">
+                  <span className={`font-black text-xl tracking-[0.2em] uppercase transition-colors duration-300 ${
+                    isPastHero ? "text-black" : "text-white"
+                  }`}>BARÊA</span>
+                  <span className={`text-[6.5px] tracking-[0.28em] uppercase transition-colors duration-300 ${
+                    isPastHero ? "text-black/40" : "text-white/50"
+                  }`}>ESQUADRIAS DE ALUMÍNIO E VIDROS</span>
+                </div>
+              </div>
             </motion.button>
 
             {/* Desktop nav */}
@@ -198,9 +213,14 @@ export default function App() {
             <div className="grid md:grid-cols-4 gap-12 mb-12">
               {/* Brand */}
               <div className="md:col-span-1">
-                <h3 className="text-2xl font-black tracking-[0.2em] mb-4">
-                  VITRALLE
-                </h3>
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="font-black text-3xl leading-none text-white">B</span>
+                  <div className="w-[1px] h-8 bg-white/30" />
+                  <div className="flex flex-col items-start leading-tight">
+                    <span className="font-black text-xl tracking-[0.2em] uppercase text-white">BARÊA</span>
+                    <span className="text-[6.5px] tracking-[0.28em] uppercase text-white/40">ESQUADRIAS DE ALUMÍNIO E VIDROS</span>
+                  </div>
+                </div>
                 <p className="text-white/50 text-sm leading-relaxed mb-6">
                   Esquadrias de alumínio e vidro com excelência, sofisticação e
                   tecnologia de ponta.

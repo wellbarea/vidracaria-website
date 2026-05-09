@@ -37,7 +37,7 @@ export default function Materiais() {
   const isInView = useInView(ref, { once: true, amount: 0.15 });
 
   return (
-    <section id="materiais" className="py-32 bg-white">
+    <section id="materiais" className="py-32">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Header */}
