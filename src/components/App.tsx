@@ -200,12 +200,14 @@ export default function App() {
         </motion.header>
 
         {/* ── Sections ── */}
-        <Hero onExploreClick={() => scrollToSection("portfolio")} />
-        <Sobre />
-        <Trabalhos />
-        <Materiais />
-        <Videos />
-        <Contato />
+        <main>
+          <Hero onExploreClick={() => scrollToSection("portfolio")} />
+          <Sobre />
+          <Trabalhos />
+          <Materiais />
+          <Videos />
+          <Contato />
+        </main>
 
         {/* ── Footer ── */}
         <footer className="bg-black text-white">
