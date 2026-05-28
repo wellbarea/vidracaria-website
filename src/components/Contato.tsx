@@ -80,8 +80,8 @@ function FloatTextarea({
 type Status = "idle" | "sending" | "success" | "error";
 
 const CONTACT_INFO = [
-  { icon: Phone,  title: "Telefone",  info: "(11) 99999-9999",          link: "tel:+5511999999999" },
-  { icon: Mail,   title: "E-mail",    info: "contato@vitralle.com.br",  link: "mailto:contato@vitralle.com.br" },
+  { icon: Phone,  title: "Telefone / WhatsApp",  info: "bareaesquadria@gmail.com", link: "mailto:bareaesquadria@gmail.com" },
+  { icon: Mail,   title: "E-mail",    info: "bareaesquadria@gmail.com",  link: "mailto:bareaesquadria@gmail.com" },
   { icon: MapPin, title: "Endereço",  info: "São Paulo, SP — Brasil",   link: "#" },
 ];
 

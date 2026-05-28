@@ -19,50 +19,25 @@ const CATEGORIES = [
   { id: "industrial",  label: "Industrial" },
 ];
 
-const PROJECTS = [
-  {
-    id: 1, category: "comercial",
-    title: "Edifício Corporativo Premium",
-    description: "Fachada de vidro com perfis de alumínio de alta performance",
-    tag: "Comercial",
-    image: "https://images.unsplash.com/photo-1715156153744-d5fd2f1f66eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnbGFzcyUyMGZhY2FkZSUyMGJ1aWxkaW5nJTIwY29udGVtcG9yYXJ5fGVufDF8fHx8MTc3Nzg5NTE2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-  },
-  {
-    id: 2, category: "residencial",
-    title: "Residência Moderna",
-    description: "Esquadrias minimalistas com vidro temperado",
-    tag: "Residencial",
-    image: "https://images.unsplash.com/photo-1773085266769-fbee873610bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwyf...&ixlib=rb-4.1.0&q=80&w=1080",
-  },
-  {
-    id: 3, category: "comercial",
-    title: "Centro Empresarial",
-    description: "Sistema de fachada cortina com isolamento térmico",
-    tag: "Comercial",
-    image: "https://images.unsplash.com/photo-1769146109206-e87b458649a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwzfHxnbGFzcyUyMGZhY2FkZSUyMGJ1aWxkaW5nJTIwY29udGVtcG9yYXJ5fGVufDF8fHx8MTc3Nzc4OTUxNjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
-  },
-  {
-    id: 4, category: "industrial",
-    title: "Complexo Industrial",
-    description: "Esquadrias de alta resistência para áreas industriais",
-    tag: "Industrial",
-    image: "https://images.unsplash.com/photo-1764083310892-7b816d9276f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHw0fHxnbGFzcyUyMGZhY2FkZSUyMGJ1aWxkaW5nJTIwY29udGVtcG9yYXJ5fGVufDF8fHx8MTc3Nzg5NTE2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-  },
-  {
-    id: 5, category: "residencial",
-    title: "Casa de Alto Padrão",
-    description: "Portas e janelas com design exclusivo",
-    tag: "Residencial",
-    image: "https://images.unsplash.com/photo-1759063915992-a589c439c2f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHw1fHxnbGFzcyUyMGZhY2FkZSUyMGJ1aWxkaW5nJTIwY29udGVtcG9yYXJ5fGVufDF8fHx8MTc3Nzg5NTE2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-  },
-  {
-    id: 6, category: "comercial",
-    title: "Shopping Center",
-    description: "Vitrines e estruturas de alumínio customizadas",
-    tag: "Comercial",
-    image: "https://images.unsplash.com/photo-1776617130019-361f70f3c703?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHw2fHxnbGFzcyUyMGZhY2FkZSUyMGJ1aWxkaW5nJTIwY29udGVtcG9yYXJ5fGVufDF8fHx8MTc3Nzg5NTE2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-  },
+const RESIDENCIAL_IMAGES = [
+  "WhatsApp Image 2026-05-28 at 19.41.31 (1).jpeg",
+  "WhatsApp Image 2026-05-28 at 19.41.31.jpeg",
+  "WhatsApp Image 2026-05-28 at 19.41.32 (1).jpeg",
+  "WhatsApp Image 2026-05-28 at 19.41.32 (2).jpeg",
+  "WhatsApp Image 2026-05-28 at 19.41.32 (3).jpeg",
+  "WhatsApp Image 2026-05-28 at 19.41.33 (1).jpeg",
+  "WhatsApp Image 2026-05-28 at 19.41.33 (2).jpeg",
+  "WhatsApp Image 2026-05-28 at 19.41.33.jpeg",
 ];
+
+const PROJECTS = RESIDENCIAL_IMAGES.map((img, idx) => ({
+  id: idx + 1,
+  category: "residencial",
+  title: `Residencial ${idx + 1}`,
+  description: "Projeto residencial executado pela Barêa.",
+  tag: "Residencial",
+  image: `/projetos/${img}`,
+}));
 
 /* ── 3D tilt project card ── */
 function ProjectCard({ project, index, isInView }: {
@@ -138,9 +113,8 @@ export default function Portfolio() {
   const isInView = useInView(ref, { once: true, amount: 0.15 });
   const [selected, setSelected] = useState("todos");
 
-  const filtered = selected === "todos"
-    ? PROJECTS
-    : PROJECTS.filter((p) => p.category === selected);
+  // Exibe todos os projetos residenciais, independente do filtro
+  const filtered = PROJECTS;
 
   return (
     <section id="portfolio" className="py-32 bg-gray-50/50">
@@ -171,36 +145,7 @@ export default function Portfolio() {
             </motion.h2>
           </div>
 
-          {/* Filter buttons */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="flex flex-wrap gap-2"
-          >
-            <LayoutGroup>
-              {CATEGORIES.map((cat) => (
-                <button
-                  key={cat.id}
-                  onClick={() => setSelected(cat.id)}
-                  className={`relative px-5 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${
-                    selected === cat.id
-                      ? "text-white"
-                      : "text-gray-500 hover:text-black bg-white border border-gray-200 hover:border-gray-400"
-                  }`}
-                >
-                  {selected === cat.id && (
-                    <motion.div
-                      layoutId="filter-pill"
-                      className="absolute inset-0 bg-black rounded-full"
-                      transition={{ type: "spring", stiffness: 350, damping: 30 }}
-                    />
-                  )}
-                  <span className="relative z-10">{cat.label}</span>
-                </button>
-              ))}
-            </LayoutGroup>
-          </motion.div>
+          {/* Filtros removidos temporariamente */}
         </div>
 
         {/* Project grid */}

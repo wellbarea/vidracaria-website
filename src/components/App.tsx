@@ -19,7 +19,7 @@ const navItems = [
   { id: "sobre", label: "Sobre" },
   { id: "portfolio", label: "Trabalhos" },
   { id: "materiais", label: "Materiais" },
-  { id: "videos", label: "Vídeos" },
+  // { id: "videos", label: "Vídeos" },
   { id: "contato", label: "Contato" },
 ];
 
@@ -205,7 +205,7 @@ export default function App() {
           <Sobre />
           <Trabalhos />
           <Materiais />
-          <Videos />
+          {/* <Videos /> */}
           <Contato />
         </main>
 
@@ -229,18 +229,13 @@ export default function App() {
                 </p>
                 <div className="flex gap-4">
                   <a
-                    href="#"
+                    href="https://www.instagram.com/esquadriaaluminio_barea?igsh=MXZydWx2MXNpMHJkbA=="
                     aria-label="Instagram"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-white/50 hover:text-white hover:border-white/60 transition-all duration-300"
                   >
                     <FaInstagram size={15} />
-                  </a>
-                  <a
-                    href="#"
-                    aria-label="Facebook"
-                    className="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-white/50 hover:text-white hover:border-white/60 transition-all duration-300"
-                  >
-                    <FaFacebook size={15} />
                   </a>
                   <a
                     href="https://wa.me/5511999999999"
@@ -297,25 +292,25 @@ export default function App() {
                 <ul className="space-y-4">
                   <li>
                     <a
-                      href="tel:+5511999999999"
+                      href="mailto:bareaesquadria@gmail.com"
                       className="flex items-center gap-3 text-sm text-white/50 hover:text-white transition-colors"
                     >
                       <Phone size={14} />
-                      (11) 99999-9999
+                      bareaesquadria@gmail.com
                     </a>
                   </li>
                   <li>
                     <a
-                      href="mailto:contato@vitralle.com.br"
+                      href="mailto:bareaesquadria@gmail.com"
                       className="flex items-center gap-3 text-sm text-white/50 hover:text-white transition-colors"
                     >
                       <Mail size={14} />
-                      contato@vitralle.com.br
+                      bareaesquadria@gmail.com
                     </a>
                   </li>
                   <li className="flex items-center gap-3 text-sm text-white/50">
                     <MapPin size={14} className="shrink-0" />
-                    São Paulo, SP — Brasil
+                    Santo Anastácio - SP
                   </li>
                 </ul>
               </div>

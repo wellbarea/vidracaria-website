@@ -144,8 +144,8 @@ export default function Sobre() {
             {/* Foto de fundo */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/instagram.png"
-              alt=""
+              src="/projetos/WhatsApp Image 2026-05-28 at 19.41.31.jpeg"
+              alt="Projeto residencial Barêa"
               className="absolute inset-0 w-full h-full object-cover opacity-40"
             />
 
