@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     template: "%s | Barêa Esquadrias",
   },
   description:
-    "Barêa Esquadrias — especialista em esquadrias de alumínio e vidro em São Paulo há mais de 15 anos. Janelas, portas, fachadas e divisórias residenciais, comerciais e industriais. Solicite seu orçamento.",
+    "Transforme seu ambiente com esquadrias de alumínio e vidro sob medida! Qualidade, design moderno e segurança para residências e empresas. Solicite seu orçamento com a Barêa Esquadrias de Alumínio e Vidros em Santo Anastácio - SP.",
 
   keywords: [
     "esquadrias de alumínio",
@@ -73,32 +73,32 @@ export const metadata: Metadata = {
     locale: "pt_BR",
     url: SITE_URL,
     siteName: "Barêa Esquadrias de Alumínio e Vidros",
-    title: "Barêa Esquadrias de Alumínio e Vidros | São Paulo",
+    title: "Barêa Esquadrias de Alumínio e Vidros | Santo Anastácio - SP",
     description:
-      "Especialista em esquadrias de alumínio e vidro em São Paulo há mais de 15 anos. Janelas, portas, fachadas e divisórias para residências, comércios e indústrias.",
+      "Transforme seu ambiente com esquadrias de alumínio e vidro sob medida! Qualidade, design moderno e segurança para residências e empresas. Solicite seu orçamento.",
     images: [
       {
-        url: "/images/banner.png",
+        url: "/images/logo-com-fundo-branco.png",
         width: 1200,
         height: 630,
-        alt: "Barêa Esquadrias de Alumínio e Vidros — fachada de vidro de alto padrão",
+        alt: "Barêa Esquadrias de Alumínio e Vidros — logo oficial",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Barêa Esquadrias de Alumínio e Vidros | São Paulo",
+    title: "Barêa Esquadrias de Alumínio e Vidros | Santo Anastácio - SP",
     description:
-      "Especialista em esquadrias de alumínio e vidro em São Paulo há mais de 15 anos. Solicite um orçamento personalizado.",
-    images: ["/images/banner.png"],
+      "Transforme seu ambiente com esquadrias de alumínio e vidro sob medida! Qualidade, design moderno e segurança para residências e empresas.",
+    images: ["/images/logo-com-fundo-branco.png"],
   },
 
   icons: {
     icon: [
-      { url: "/images/logo-black.png", type: "image/png" },
+      { url: "/images/logo-com-fundo-branco.png", type: "image/png" },
     ],
-    apple: "/images/logo-black.png",
+    apple: "/images/logo-com-fundo-branco.png",
   },
 
   category: "construction",
@@ -110,20 +110,20 @@ const jsonLd = {
   "@id": `${SITE_URL}/#business`,
   name: "Barêa Esquadrias de Alumínio e Vidros",
   description:
-    "Especialista em esquadrias de alumínio e vidro em São Paulo há mais de 15 anos. Janelas, portas, fachadas e divisórias residenciais, comerciais e industriais.",
+    "Transforme seu ambiente com esquadrias de alumínio e vidro sob medida! Qualidade, design moderno e segurança para residências e empresas. Solicite seu orçamento com a Barêa Esquadrias de Alumínio e Vidros em Santo Anastácio - SP.",
   url: SITE_URL,
-  telephone: "+5511999999999",
-  email: "contato@vitralle.com.br",
+  telephone: "bareaesquadria@gmail.com",
+  email: "bareaesquadria@gmail.com",
   address: {
     "@type": "PostalAddress",
-    addressLocality: "São Paulo",
+    addressLocality: "Santo Anastácio",
     addressRegion: "SP",
     addressCountry: "BR",
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: -23.5505,
-    longitude: -46.6333,
+    latitude: -21.9747,
+    longitude: -51.6522,
   },
   openingHoursSpecification: [
     {
@@ -140,11 +140,10 @@ const jsonLd = {
     },
   ],
   priceRange: "$$",
-  image: `${SITE_URL}/images/banner.png`,
-  logo: `${SITE_URL}/images/logo-black.png`,
+  image: `${SITE_URL}/images/logo-com-fundo-branco.png`,
+  logo: `${SITE_URL}/images/logo-com-fundo-branco.png`,
   sameAs: [
-    "https://www.instagram.com/bareasquadrias",
-    "https://www.facebook.com/bareasquadrias",
+    "https://www.instagram.com/esquadriaaluminio_barea?igsh=MXZydWx2MXNpMHJkbA==",
   ],
   hasOfferCatalog: {
     "@type": "OfferCatalog",
