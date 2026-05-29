@@ -96,6 +96,7 @@ export const metadata: Metadata = {
 
   icons: {
     icon: [
+      { url: "/images/B.svg", type: "image/svg+xml" },
       { url: "/images/logo-com-fundo-branco.png", type: "image/png" },
     ],
     apple: "/images/logo-com-fundo-branco.png",
