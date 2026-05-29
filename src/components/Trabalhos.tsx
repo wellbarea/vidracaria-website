@@ -28,6 +28,9 @@ const RESIDENCIAL_IMAGES = [
   "WhatsApp Image 2026-05-28 at 19.41.33 (1).jpeg",
   "WhatsApp Image 2026-05-28 at 19.41.33 (2).jpeg",
   "WhatsApp Image 2026-05-28 at 19.41.33.jpeg",
+  "WhatsApp Image 2026-05-28 at 21.10.38.jpeg",
+  "WhatsApp Image 2026-05-28 at 21.10.38 (1).jpeg",
+  "WhatsApp Image 2026-05-28 at 21.10.38 (2).jpeg",
 ];
 
 const PROJECTS = RESIDENCIAL_IMAGES.map((img, idx) => ({
@@ -96,9 +99,8 @@ function ProjectCard({ project, index, isInView }: {
           <ArrowUpRight className="text-white group-hover:text-black transition-colors duration-300" size={16} />
         </div>
 
-        {/* Text */}
+        {/* Text (apenas descrição, sem título) */}
         <div className="absolute inset-0 p-6 flex flex-col justify-end translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-          <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
           <p className="text-white/70 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             {project.description}
           </p>
