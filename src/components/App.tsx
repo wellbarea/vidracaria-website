@@ -297,34 +297,28 @@ export default function App() {
                     >
                       <Phone size={14} />
                       bareaesquadria@gmail.com
-                    <li>
-                      <a
-                        href="mailto:bareaesquadria@gmail.com"
-                        className="flex items-center gap-3 text-sm text-white/50 hover:text-white transition-colors"
-                      >
-                        <Phone size={14} />
-                        bareaesquadria@gmail.com
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://wa.me/5518991578510"
-                        className="flex items-center gap-3 text-sm text-white/50 hover:text-white transition-colors"
-                      >
-                        <FaWhatsapp size={14} />
-                        +55 18 99157-8510
-                      </a>
-                    </li>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://wa.me/5518991578510"
+                      className="flex items-center gap-3 text-sm text-white/50 hover:text-white transition-colors"
+                    >
+                      <FaWhatsapp size={14} />
+                      +55 18 99157-8510
+                    </a>
+                  </li>
+                </ul>
 
-            {/* Bottom bar */}
-            <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-              <p className="text-white/30 text-xs">
-                © 2026 Vitralle. Todos os direitos reservados.
-              </p>
-              <p className="text-white/20 text-xs">
-                Esquadrias de alumínio e vidro de alto padrão
-              </p>
-            </div>
+                {/* Bottom bar */}
+                <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+                  <p className="text-white/30 text-xs">
+                    © 2026 Vitralle. Todos os direitos reservados.
+                  </p>
+                  <p className="text-white/20 text-xs">
+                    Esquadrias de alumínio e vidro de alto padrão
+                  </p>
+                </div>
           </div>
         </footer>
       </div>
