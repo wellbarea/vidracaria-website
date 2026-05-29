@@ -319,6 +319,8 @@ export default function App() {
                     Esquadrias de alumínio e vidro de alto padrão
                   </p>
                 </div>
+              </div>
+            </div>
           </div>
         </footer>
       </div>
