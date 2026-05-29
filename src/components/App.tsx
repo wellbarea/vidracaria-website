@@ -297,24 +297,24 @@ export default function App() {
                     >
                       <Phone size={14} />
                       bareaesquadria@gmail.com
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="mailto:bareaesquadria@gmail.com"
-                      className="flex items-center gap-3 text-sm text-white/50 hover:text-white transition-colors"
-                    >
-                      <Mail size={14} />
-                      bareaesquadria@gmail.com
-                    </a>
-                  </li>
-                  <li className="flex items-center gap-3 text-sm text-white/50">
-                    <MapPin size={14} className="shrink-0" />
-                    Santo Anastácio - SP
-                  </li>
-                </ul>
-              </div>
-            </div>
+                    <li>
+                      <a
+                        href="mailto:bareaesquadria@gmail.com"
+                        className="flex items-center gap-3 text-sm text-white/50 hover:text-white transition-colors"
+                      >
+                        <Phone size={14} />
+                        bareaesquadria@gmail.com
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://wa.me/5518991578510"
+                        className="flex items-center gap-3 text-sm text-white/50 hover:text-white transition-colors"
+                      >
+                        <FaWhatsapp size={14} />
+                        +55 18 99157-8510
+                      </a>
+                    </li>
 
             {/* Bottom bar */}
             <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">

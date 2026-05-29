@@ -78,7 +78,7 @@ export const metadata: Metadata = {
       "Transforme seu ambiente com esquadrias de alumínio e vidro sob medida! Qualidade, design moderno e segurança para residências e empresas. Solicite seu orçamento.",
     images: [
       {
-        url: "/images/logo-com-fundo-branco.png",
+        url: "https://bareaesquadrias.com.br/images/logo-com-fundo-branco.png",
         width: 1200,
         height: 630,
         alt: "Barêa Esquadrias de Alumínio e Vidros — logo oficial",
@@ -91,7 +91,7 @@ export const metadata: Metadata = {
     title: "Barêa Esquadrias de Alumínio e Vidros | Santo Anastácio - SP",
     description:
       "Transforme seu ambiente com esquadrias de alumínio e vidro sob medida! Qualidade, design moderno e segurança para residências e empresas.",
-    images: ["/images/logo-com-fundo-branco.png"],
+    images: ["https://bareaesquadrias.com.br/images/logo-com-fundo-branco.png"],
   },
 
   icons: {
