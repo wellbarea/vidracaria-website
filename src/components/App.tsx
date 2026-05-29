@@ -238,7 +238,7 @@ export default function App() {
                     <FaInstagram size={15} />
                   </a>
                   <a
-                    href="https://wa.me/5511999999999"
+                    href="https://wa.me/5518991578510"
                     aria-label="WhatsApp"
                     className="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-white/50 hover:text-white hover:border-white/60 transition-all duration-300"
                   >

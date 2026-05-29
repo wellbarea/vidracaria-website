@@ -80,7 +80,7 @@ function FloatTextarea({
 type Status = "idle" | "sending" | "success" | "error";
 
 const CONTACT_INFO = [
-  { icon: Phone,  title: "Telefone / WhatsApp",  info: "(18) 98123-4567", link: "https://wa.me/5518981234567" },
+  { icon: Phone,  title: "Telefone / WhatsApp",  info: "+55 18 99157-8510", link: "https://wa.me/5518991578510" },
   { icon: Mail,   title: "E-mail",    info: "bareaesquadria@gmail.com",  link: "mailto:bareaesquadria@gmail.com" },
   { icon: MapPin, title: "Endereço",  info: "São Paulo, SP — Brasil",   link: "#" },
 ];
